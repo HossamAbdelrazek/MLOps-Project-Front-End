@@ -154,8 +154,8 @@
       function updatePhysicsWorld() {
         // Apply "friction".
         var lv = wBall.GetLinearVelocity();
-        lv.Multiply(0.95);
-        wBall.SetLinearVelocity(lv*5);
+        lv.Multiply(1.01);
+        wBall.SetLinearVelocity(lv);
 
         // Apply user-directed force.
         var f = new b2Vec2(
