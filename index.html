@@ -155,7 +155,7 @@
         // Apply "friction".
         var lv = wBall.GetLinearVelocity();
         lv.Multiply(0.95);
-        wBall.SetLinearVelocity(lv);
+        wBall.SetLinearVelocity(lv*5);
 
         // Apply user-directed force.
         var f = new b2Vec2(
