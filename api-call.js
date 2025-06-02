@@ -7,7 +7,7 @@ async function getPredictedLabel(processed_t) {
       flatData.push(processed_t[i].x, processed_t[i].y, processed_t[i].z);
     }
     
-    const response = await fetch("http://127.0.0.1:8080/predict", {
+    const response = await fetch("http://127.0.0.1:8000/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
